@@ -1,6 +1,7 @@
 <template>
 
     <div class="min-w-[160px] w-[160px]  transition-all bg-indigo-700 text-white py-4 px-2" id="sideBarContainer" >
+        <Logo class="block h-9 w-auto fill-white text-gray-800 pl-2" />
         <router-link :to="{name: 'app.dashboard'}"
                     class="flex items-center p-2 rounded transition-colors hover:bg-black/30">
             <span class="mr-2 text-gray-300">
@@ -89,7 +90,7 @@
 <script setup>
 
 import { BuildingStorefrontIcon, TagIcon, ArchiveBoxIcon, FolderOpenIcon, RectangleStackIcon, ClipboardDocumentListIcon, UsersIcon, UserGroupIcon, PresentationChartLineIcon } from '@heroicons/vue/24/outline'
-
+import Logo from './commons/Logo.vue';
 </script>
 
 <style scoped lang="scss">
@@ -97,7 +98,7 @@ import { BuildingStorefrontIcon, TagIcon, ArchiveBoxIcon, FolderOpenIcon, Rectan
 #sideBarContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap:0.75rem;
   a{
     width: 100%;    
