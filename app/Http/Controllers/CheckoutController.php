@@ -116,7 +116,7 @@ class CheckoutController extends Controller
             $customer = $stripe->customers->create([
                 'name' => $user->name,
             ]);
-            return view('checkout.success', compact('customer'));
+            return view('checkout.success', compact('customer', 'payment'));
         } catch (NotFoundHttpException $e) {
             throw $e;
         } catch (\Exception $e) {

@@ -2204,7 +2204,7 @@
     "src": "node_modules/flag-icon-css/flags/4x3/zw.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-c2ec7b71.css",
+    "file": "assets/app-7038a094.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -2212,9 +2212,5 @@
     "file": "assets/app-5d5420f3.js",
     "isEntry": true,
     "src": "resources/js/app.js"
-  },
-  "storage/app/public/images/cv/foto-perfil.webp": {
-    "file": "assets/foto-perfil-b606c398.webp",
-    "src": "storage/app/public/images/cv/foto-perfil.webp"
   }
 }
