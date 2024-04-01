@@ -21,6 +21,14 @@ body{
         background-color: $white;
         color: $black;
     }
+    .toast{
+        background: $white;
+        color: $primary;
+        @apply flex flex-col items-center justify-between;
+        .progress{
+            background: $gray;
+        }
+    }
     header, .mobile-menu{
         a:hover{
             color:$black;
@@ -224,6 +232,51 @@ body{
         }
     }
     // SPLIDE Home carousel
+    // Cart
+    .cartview{
+        h3{
+            color: $primary;
+        }
+        .remove svg{
+            fill:$black;
+        }
+    }
+    // Cookie consent
+    .cookie-consent{
+        background-color: $gray;
+        @apply z-10;
+        p{
+            color: $primary
+        }
+    }
+    //Login
+    .backlogin, .backprofile{
+        .account{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $gray;
+            border-radius: 0;
+        }
+        .formselect{
+            color: $gray;
+        }
+        background-image: url("/storage/app/public/iconos/background.svg");
+        .bg-form{
+            background-color: $gray;
+            background-color: $white;
+            @apply shadow-md rounded-lg w-full max-w-[400px];
+            .title h3{
+                color: $black;
+            }
+            .auth-session-status{
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+    .backprofile{
+        background-image: none;
+    }
     // FOOTER
     footer{
         @apply w-full bg-gray-900;
